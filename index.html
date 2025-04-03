@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Water Tank Problem</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Water Tank Problem</h1>
+
+    <div class="container">
+      <label for="blockHeights"
+        >Enter block heights (comma-separated, e.g.,
+        [0,4,0,0,0,6,0,6,4,0]):</label
+      >
+      <input type="text" id="blockHeights" value="[0,4,0,0,0,6,0,6,4,0]" />
+      <button id="calculateBtn">Calculate & Visualize</button>
+
+      <div id="result">
+        <h2>Output</h2>
+        <p id="waterUnits">Total Water: 0 Units</p>
+        <div id="svgContainer">
+          <!-- SVG will be generated here -->
+        </div>
+        <p id="errorMessage" class="error"></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

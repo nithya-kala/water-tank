@@ -1,0 +1,103 @@
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: auto;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: calc(100% - 22px); /* Adjust for padding */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+#result {
+    margin-top: 20px;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+#waterUnits {
+    font-weight: bold;
+    font-size: 1.1em;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#svgContainer {
+    width: 100%;
+    overflow-x: auto; /* Add scroll if SVG is too wide */
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    background-color: #e9f7fe; /* Light blue background for contrast */
+}
+
+svg {
+    display: block; /* Prevents extra space below SVG */
+    margin: auto; /* Center SVG if container is wider */
+    background-color: white; /* White background for the drawing area */
+}
+
+/* SVG Styles */
+.block {
+    fill: #f0ad4e; /* Yellowish-orange */
+    opacity: 0.8; /* Slight transparency */
+    /* stroke: #d39441;
+    stroke-width: 1; */
+}
+
+.water {
+    fill: #3498db; /* Blue */
+    opacity: 0.8; /* Slight transparency */
+}
+
+.grid-line {
+    stroke: #0c0c0c;
+    stroke-width: 0.5;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
